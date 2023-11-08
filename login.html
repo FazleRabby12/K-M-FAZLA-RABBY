@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript">
+        function validation(){
+            var username=document.getElementById("username");
+            var password=docuent.getElementById("password");
+
+            if(username.value=="Riyad" && password=="1234"){
+                return true;
+            }
+            else{
+                return false;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="return validate()" action="index.html">
+            <h1> Login Information</h1>
+            <label for="username">Username</label>
+            <input type="username" id="username" placeholder="Enter your username">
+            <label for="password">Password</label>
+            <input type="password" id="pssword" placeholder="Enter your password">
+            
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 K.M. Fazla Rabby. All rights reserver</p>
+    </footer>
+    
+
+</body>
+</html>
